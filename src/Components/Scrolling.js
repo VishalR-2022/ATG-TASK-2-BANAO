@@ -34,7 +34,7 @@ export default function Scrolling() {
 
   const [dot, setDot] = useState(0);
   const handleScroll = useCallback(() => {
-    setDot(Math.ceil((window.scrollY + 7) / 100) - 1);
+    setDot(Math.ceil((window.scrollY + 7) / 100) -1);
   }, []);
   useEffect(() => {
     switch (dot) {
