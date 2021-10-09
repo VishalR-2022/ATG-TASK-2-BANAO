@@ -10,9 +10,6 @@ export default function Svg() {
   let dot5 = useRef(null);
   let dot6 = useRef(null);
   let PathImg = useRef(null);
-  /*      dot1.children[0].children[0].style.fill = "rgb(0, 146, 255)";
-      dot1.children[0].children[0].style.opacity = 1;
-      dot1.children[1].children[0].style.opacity = 1;*/
 
   function deselect() {
     dot1.children[0].children[0].style.fill = "rgb(255, 255, 255)";

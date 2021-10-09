@@ -34,7 +34,7 @@ export default function Scrolling() {
 
   const [dot, setDot] = useState(0);
   const handleScroll = useCallback(() => {
-    setDot(Math.ceil((window.scrollY + 7) / 100) -1);
+    setDot(Math.ceil((window.scrollY + 7) / 100)-1);
   }, []);
   useEffect(() => {
     switch (dot) {
@@ -110,13 +110,13 @@ export default function Scrolling() {
           ease: Power3.easeOut,
         });
         break;
-      case 6:
-        gsap.from(sec6.children, {
-          duration: 1.5,
-          y: 400,
-          ease: Power3.easeOut,
-        });
-        break;
+        case 6:
+          gsap.from(sec6.children, {
+            duration: 1.5,
+            y: 400,
+            ease: Power3.easeOut,
+          });
+          break;
       default:
         console.log(dot);
         break;
@@ -134,7 +134,7 @@ export default function Scrolling() {
         return (
           <section
             className="Panel"
-            style={{ backgroundColor: "#A8A8AA", height: window.innerHeight }}
+            style={{ backgroundColor: "#A8A8AA", height:"100vh" }}
           >
             <img
               src={worldApp}
@@ -178,7 +178,7 @@ export default function Scrolling() {
         return (
           <section
             className="Panel"
-            style={{ backgroundColor: "#1B0361", height: window.innerHeight }}
+            style={{ backgroundColor: "#1B0361", height: "100vh" }}
           >
             <SectionCard
               SvgTxt1="The Next Big"
@@ -219,7 +219,7 @@ export default function Scrolling() {
         return (
           <section
             className="Panel"
-            style={{ backgroundColor: "#141647", height: window.innerHeight }}
+            style={{ backgroundColor: "#141647", height: "100vh" }}
           >
             <SectionCard
               SvgTxt1="Powered by advance"
@@ -259,7 +259,7 @@ export default function Scrolling() {
         return (
           <section
             className="Panel"
-            style={{ backgroundColor: "#0d131a", height: window.innerHeight }}
+            style={{ backgroundColor: "#0d131a", height:"100vh" }}
           >
             <SectionCard
               SvgTxt1="Redefining"
@@ -328,7 +328,7 @@ export default function Scrolling() {
         return (
           <section
             className="Panel"
-            style={{ backgroundColor: "#2CCAD4", height: window.innerHeight }}
+            style={{ backgroundColor: "#2CCAD4", height: "100vh" }}
           >
             <SectionCard
               SvgTxt1="Text Headline"
@@ -396,7 +396,7 @@ export default function Scrolling() {
 
       case 5:
         return (
-          <section className="Panel" style={{ height: window.innerHeight }}>
+          <section className="Panel" style={{ height: "100vh" }}>
             <SectionCard
               SvgTxt1="Developing ERP Solution For"
               SvgTxt2="Text Headline"
@@ -429,7 +429,7 @@ export default function Scrolling() {
         return (
           <section
             className="Panel"
-            style={{ backgroundColor: "#00B668", height: window.innerHeight }}
+            style={{ backgroundColor: "#00B668", height: "100vh" }}
           >
             <img
               src={worldAppOp}
